@@ -31,7 +31,7 @@ const Heading = styled.h1`
 	}
 `;
 
-const Image = styled.img``;
+const Image = styled.div``;
 
 const Paragraph = styled.p`
 	font-size: 0.8rem;
