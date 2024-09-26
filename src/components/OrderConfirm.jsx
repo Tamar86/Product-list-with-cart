@@ -27,24 +27,34 @@ const OrderTotalContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 11rem;
+	/* gap: 11rem; */
 
 	@media (max-width: 1024px) {
 		width: 40rem;
 	}
+
 	@media (max-width: 767px) {
-		width: 30rem;
+		width: 29rem;
 	}
-
-	@media (max-width: 540px) {
-		width: 25rem;
+	@media (max-width: 608px) {
+		width: 27rem;
 	}
-
+	@media (max-width: 575px) {
+		width: 24rem;
+	}
+	@media (max-width: 524px) {
+		width: 23rem;
+	}
 	@media (max-width: 480px) {
-		width: 20rem;
-		gap: 5rem;
+		width: 21rem;
 	}
-	@media (max-width: 375px) {
+	@media (max-width: 427px) {
+		width: 19rem;
+	}
+	@media (max-width: 400px) {
+		width: 17rem;
+	}
+	@media (max-width: 357px) {
 		width: 15rem;
 	}
 `;
@@ -77,15 +87,19 @@ const DeliveryInfo = styled.p`
 		width: 30rem;
 		font-size: 1rem;
 	}
+	@media (max-width: 667px) {
+		width: 28rem;
+	}
 	@media (max-width: 540px) {
-		width: 25rem;
+		width: 27rem;
 	}
 	@media (max-width: 480px) {
 		width: 20rem;
 		font-size: 0.8rem;
 	}
-	@media (max-width: 375px) {
-		width: 20rem;
+	@media (max-width: 400px) {
+		width: 14rem;
+		font-size: 0.6rem;
 	}
 `;
 

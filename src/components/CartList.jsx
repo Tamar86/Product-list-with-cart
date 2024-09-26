@@ -8,6 +8,31 @@ const StyledList = styled.ul`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@media (max-width: 767px) {
+		width: 29rem;
+	}
+	@media (max-width: 608px) {
+		width: 27rem;
+	}
+	@media (max-width: 575px) {
+		width: 24rem;
+	}
+	@media (max-width: 524px) {
+		width: 23rem;
+	}
+	@media (max-width: 480px) {
+		width: 21rem;
+	}
+	@media (max-width: 427px) {
+		width: 19rem;
+	}
+	@media (max-width: 400px) {
+		width: 17rem;
+	}
+	@media (max-width: 357px) {
+		width: 15rem;
+	}
 `;
 
 const ListItem = styled.li`

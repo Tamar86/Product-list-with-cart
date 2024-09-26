@@ -6,13 +6,44 @@ import OrderConfirm from './OrderConfirm';
 
 const StyledCart = styled.div`
 	max-width: 100%;
-	display: grid;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: hsl(20, 50%, 98%);
 	border-radius: 0.8rem;
 	padding: 1.5rem;
 	gap: 3rem;
-	max-height: 25rem; // Set an appropriate height
-	overflow-y: auto; // Scrollable when items exceed the max-height
+	height: fit-content;
+
+	@media (max-width: 767px) {
+		width: 32rem;
+	}
+	@media (max-width: 608px) {
+		width: 30rem;
+	}
+	@media (max-width: 575px) {
+		width: 28rem;
+	}
+	@media (max-width: 524px) {
+		width: 27rem;
+	}
+	@media (max-width: 480px) {
+		width: 25rem;
+	}
+	@media (max-width: 427px) {
+		width: 23rem;
+	}
+	@media (max-width: 400px) {
+		width: 20rem;
+	}
+	@media (max-width: 357px) {
+		width: 18rem;
+	}
+
+	@media (max-width: 320px) {
+		width: 17rem;
+	}
 `;
 
 const Container = styled.div`
@@ -41,8 +72,14 @@ const Paragraph = styled.p`
 	@media (max-width: 767px) {
 		font-size: 1.4rem;
 	}
+	@media (max-width: 500px) {
+		font-size: 1.2rem;
+	}
 	@media (max-width: 440px) {
 		font-size: 1rem;
+	}
+	@media (max-width: 350px) {
+		font-size: 0.9rem;
 	}
 	@media (max-width: 340px) {
 		font-size: 0.8rem;
