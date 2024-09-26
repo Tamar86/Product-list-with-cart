@@ -43,10 +43,6 @@ const ProductTotalPrice = styled.span`
 	color: hsl(12, 20%, 44%);
 `;
 
-const Img = styled.div`
-	width: 0.7rem;
-`;
-
 function CartList({ name, price, numPerProduct, id }) {
 	const { dispatch, cart } = useProducts();
 	const product = cart.find(item => item.id === id);
@@ -91,20 +87,18 @@ function CartList({ name, price, numPerProduct, id }) {
 				</ListContainer>
 			</ListItem>
 			<Button size='small' onClick={handleDeleteProduct}>
-				<Img>
-					<svg
-						xmlns='http://www.w3.org/2000/svg'
-						width='8'
-						height='8'
-						fill='none'
-						viewBox='0 0 10 10'
-					>
-						<path
-							fill='#CAAFA7'
-							d='M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z'
-						/>
-					</svg>
-				</Img>
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					width='8'
+					height='8'
+					fill='none'
+					viewBox='0 0 10 10'
+				>
+					<path
+						fill='#CAAFA7'
+						d='M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z'
+					/>
+				</svg>
 			</Button>
 		</StyledList>
 	);
