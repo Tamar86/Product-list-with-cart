@@ -236,8 +236,8 @@ Error generating stack: `+l.message+`
 	max-width: 100%;
 	width: 35.5rem;
 	padding-bottom: 3rem;
-	height: fit-content;
-
+	max-height: fit-content;
+	/* height: fit-content; */
 	@media (max-width: 850px) {
 		width: 30.5rem;
 	}
@@ -271,6 +271,7 @@ Error generating stack: `+l.message+`
 	top: 0;
 	left: 0;
 	width: 100%;
+	min-height: 100%;
 	height: 100vh;
 
 	background-color: rgb(0, 0, 0, 0.4);
