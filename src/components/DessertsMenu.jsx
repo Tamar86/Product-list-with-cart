@@ -12,14 +12,12 @@ const StyledDessertsMenu = styled.div`
 const Menu = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	max-width: 100%;
 	gap: 1rem;
 
 	@media (max-width: 767px) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		max-width: 100%;
 	}
 `;
 const Heading = styled.h1`

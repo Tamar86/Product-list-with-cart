@@ -13,8 +13,28 @@ const StyledModal = styled.div`
 	padding-bottom: 3rem;
 	height: fit-content;
 
+	@media (max-width: 850px) {
+		width: 30.5rem;
+	}
+
 	@media (max-width: 767px) {
-		width: 32.5rem;
+		width: 28.5rem;
+	}
+
+	@media (max-width: 670px) {
+		width: 26.5rem;
+	}
+
+	@media (max-width: 580px) {
+		width: 24.5rem;
+	}
+
+	@media (max-width: 480px) {
+		width: 22.5rem;
+	}
+
+	@media (max-width: 320px) {
+		width: 20.5rem;
 	}
 `;
 const Overlay = styled.div`
@@ -28,6 +48,7 @@ const Overlay = styled.div`
 	left: 0;
 	width: 100%;
 	height: 100vh;
+
 	background-color: rgb(0, 0, 0, 0.4);
 	/* backdrop-filter: blur(1px); */
 	z-index: 1000;
@@ -47,6 +68,27 @@ const Paragraph = styled.p`
 const List = styled.ul`
 	border-radius: 0.8rem;
 	background-color: hsl(13, 31%, 94%);
+
+	@media (max-width: 850px) {
+		width: 28.5rem;
+	}
+
+	@media (max-width: 767px) {
+		width: 25.5rem;
+	}
+	@media (max-width: 670px) {
+		width: 23.5rem;
+	}
+	@media (max-width: 580px) {
+		width: 20.5rem;
+	}
+
+	@media (max-width: 480px) {
+		width: 19.5rem;
+	}
+	@media (max-width: 320px) {
+		width: 16.5rem;
+	}
 `;
 
 const ListItem = styled.li`
@@ -56,7 +98,7 @@ const ListItem = styled.li`
 	justify-content: space-between;
 	padding: 1rem;
 
-	@media (max-width: 425px) {
+	@media (max-width: 600px) {
 		font-size: smaller;
 	}
 `;
@@ -95,6 +137,26 @@ const OrderTotalContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	@media (max-width: 850px) {
+		width: 28.5rem;
+	}
+
+	@media (max-width: 767px) {
+		width: 25.5rem;
+	}
+	@media (max-width: 670px) {
+		width: 23.5rem;
+	}
+	@media (max-width: 580px) {
+		width: 20.5rem;
+	}
+
+	@media (max-width: 480px) {
+		width: 19.5rem;
+	}
+	@media (max-width: 320px) {
+		width: 16.5rem;
+	}
 `;
 
 const OrderTotal = styled.span`
@@ -116,6 +178,27 @@ const ButtonContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@media (max-width: 850px) {
+		width: 28.5rem;
+	}
+
+	@media (max-width: 767px) {
+		width: 25.5rem;
+	}
+
+	@media (max-width: 670px) {
+		width: 23.5rem;
+	}
+	@media (max-width: 580px) {
+		width: 20.5rem;
+	}
+	@media (max-width: 480px) {
+		width: 18.5rem;
+	}
+	@media (max-width: 320px) {
+		width: 16.5rem;
+	}
 `;
 
 function ConfirmModal({ orderTotal, cart }) {

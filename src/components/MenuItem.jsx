@@ -4,7 +4,12 @@ import Button from './Button';
 
 const StyledMenuItem = styled.div`
 	display: grid;
+	width: 100%;
 	gap: 2.5rem;
+
+	/* @media (max-width: 767px) { */
+	/* width: 85%; */
+	/* } */
 `;
 
 const ImgBtnContainer = styled.div`
@@ -60,7 +65,7 @@ const ProductsName = styled.p`
 		font-size: 1rem;
 	}
 
-	@media (max-width: 835px) {
+	@media (max-width: 865px) {
 		font-size: 0.8rem;
 	}
 
@@ -68,8 +73,12 @@ const ProductsName = styled.p`
 		font-size: 2rem;
 	}
 
-	@media (max-width: 440px) {
+	@media (max-width: 520px) {
 		font-size: 1.5rem;
+	}
+
+	@media (max-width: 440px) {
+		font-size: 1.3rem;
 	}
 
 	@media (max-width: 340px) {

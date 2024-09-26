@@ -7,7 +7,12 @@ const StyledAppLayout = styled.div`
 	display: flex;
 	flex-direction: column;
 	max-width: 100%;
+	width: 100%;
 	gap: 3rem;
+
+	/* @media (max-width: 767px) { */
+	/* width: 45rem; */
+	/* } */
 `;
 
 const Layout = styled.div`
@@ -24,12 +29,23 @@ const Layout = styled.div`
 	}
 
 	//Mobile
-	@media (max-width: 635px) {
-		padding: 1.8rem;
+	@media (max-width: 767px) {
+		padding: 3.8rem;
 	}
 
-	@media (max-width: 535px) {
-		padding: 1.5rem;
+	@media (max-width: 635px) {
+		padding: 3.5rem;
+	}
+
+	@media (max-width: 550px) {
+		padding: 3.2rem;
+	}
+
+	@media (max-width: 480px) {
+		padding: 3rem;
+	}
+	@media (max-width: 320px) {
+		padding: 2.5rem;
 	}
 `;
 

@@ -15,7 +15,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  padding: 2rem 7rem;
+	padding: 2rem 7rem;
 	font-family: "Red Hat Text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
