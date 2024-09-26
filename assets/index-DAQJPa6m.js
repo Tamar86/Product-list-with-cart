@@ -205,6 +205,31 @@ Error generating stack: `+l.message+`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@media (max-width: 767px) {
+		width: 29rem;
+	}
+	@media (max-width: 608px) {
+		width: 27rem;
+	}
+	@media (max-width: 575px) {
+		width: 24rem;
+	}
+	@media (max-width: 524px) {
+		width: 23rem;
+	}
+	@media (max-width: 480px) {
+		width: 21rem;
+	}
+	@media (max-width: 427px) {
+		width: 19rem;
+	}
+	@media (max-width: 400px) {
+		width: 17rem;
+	}
+	@media (max-width: 357px) {
+		width: 15rem;
+	}
 `,bh=z.li`
 	display: grid;
 	gap: 0.5rem;
@@ -417,24 +442,34 @@ Error generating stack: `+l.message+`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 11rem;
+	/* gap: 11rem; */
 
 	@media (max-width: 1024px) {
 		width: 40rem;
 	}
+
 	@media (max-width: 767px) {
-		width: 30rem;
+		width: 29rem;
 	}
-
-	@media (max-width: 540px) {
-		width: 25rem;
+	@media (max-width: 608px) {
+		width: 27rem;
 	}
-
+	@media (max-width: 575px) {
+		width: 24rem;
+	}
+	@media (max-width: 524px) {
+		width: 23rem;
+	}
 	@media (max-width: 480px) {
-		width: 20rem;
-		gap: 5rem;
+		width: 21rem;
 	}
-	@media (max-width: 375px) {
+	@media (max-width: 427px) {
+		width: 19rem;
+	}
+	@media (max-width: 400px) {
+		width: 17rem;
+	}
+	@media (max-width: 357px) {
 		width: 15rem;
 	}
 `,j1=z.span`
@@ -464,28 +499,63 @@ Error generating stack: `+l.message+`
 		width: 30rem;
 		font-size: 1rem;
 	}
+	@media (max-width: 667px) {
+		width: 28rem;
+	}
 	@media (max-width: 540px) {
-		width: 25rem;
+		width: 27rem;
 	}
 	@media (max-width: 480px) {
 		width: 20rem;
 		font-size: 0.8rem;
 	}
-	@media (max-width: 375px) {
-		width: 20rem;
+	@media (max-width: 400px) {
+		width: 14rem;
+		font-size: 0.6rem;
 	}
 `,T1=z.span`
 	font-weight: 600;
 	color: hsl(14, 65%, 9%);
 `;function L1(){const[e,t]=de.useState(!1),{orderTotal:n}=rn(),{cart:r}=rn();function i(){t(!0)}return y.jsxs(P1,{children:[y.jsxs(_1,{children:[y.jsx(j1,{children:"Order Total"}),y.jsxs(z1,{children:["$",n.toFixed(2)]})]}),y.jsxs(N1,{children:[y.jsx("span",{children:y.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"21",height:"20",fill:"none",viewBox:"0 0 21 20",children:[y.jsx("path",{fill:"#1EA575",d:"M8 18.75H6.125V17.5H8V9.729L5.803 8.41l.644-1.072 2.196 1.318a1.256 1.256 0 0 1 .607 1.072V17.5A1.25 1.25 0 0 1 8 18.75Z"}),y.jsx("path",{fill:"#1EA575",d:"M14.25 18.75h-1.875a1.25 1.25 0 0 1-1.25-1.25v-6.875h3.75a2.498 2.498 0 0 0 2.488-2.747 2.594 2.594 0 0 0-2.622-2.253h-.99l-.11-.487C13.283 3.56 11.769 2.5 9.875 2.5a3.762 3.762 0 0 0-3.4 2.179l-.194.417-.54-.072A1.876 1.876 0 0 0 5.5 5a2.5 2.5 0 1 0 0 5v1.25a3.75 3.75 0 0 1 0-7.5h.05a5.019 5.019 0 0 1 4.325-2.5c2.3 0 4.182 1.236 4.845 3.125h.02a3.852 3.852 0 0 1 3.868 3.384 3.75 3.75 0 0 1-3.733 4.116h-2.5V17.5h1.875v1.25Z"})]})}),y.jsxs("span",{children:["This is a ",y.jsx(T1,{children:"carbon-neutral"})," delivery"]})]}),y.jsx(Or,{size:"large",variant:"btnConfirm",onClick:i,children:"Confirm Order"}),e&&y.jsx(E1,{cart:r,orderTotal:n})]})}const $1=z.div`
 	max-width: 100%;
-	display: grid;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: hsl(20, 50%, 98%);
 	border-radius: 0.8rem;
 	padding: 1.5rem;
 	gap: 3rem;
-	max-height: 25rem; // Set an appropriate height
-	overflow-y: auto; // Scrollable when items exceed the max-height
+	height: fit-content;
+
+	@media (max-width: 767px) {
+		width: 32rem;
+	}
+	@media (max-width: 608px) {
+		width: 30rem;
+	}
+	@media (max-width: 575px) {
+		width: 28rem;
+	}
+	@media (max-width: 524px) {
+		width: 27rem;
+	}
+	@media (max-width: 480px) {
+		width: 25rem;
+	}
+	@media (max-width: 427px) {
+		width: 23rem;
+	}
+	@media (max-width: 400px) {
+		width: 20rem;
+	}
+	@media (max-width: 357px) {
+		width: 18rem;
+	}
+
+	@media (max-width: 320px) {
+		width: 17rem;
+	}
 `,I1=z.div`
 	display: flex;
 	flex-direction: column;
@@ -506,8 +576,14 @@ Error generating stack: `+l.message+`
 	@media (max-width: 767px) {
 		font-size: 1.4rem;
 	}
+	@media (max-width: 500px) {
+		font-size: 1.2rem;
+	}
 	@media (max-width: 440px) {
 		font-size: 1rem;
+	}
+	@media (max-width: 350px) {
+		font-size: 0.9rem;
 	}
 	@media (max-width: 340px) {
 		font-size: 0.8rem;
