@@ -4,12 +4,8 @@ import Button from './Button';
 
 const StyledMenuItem = styled.div`
 	display: grid;
-	width: 100%;
+	max-width: 100%;
 	gap: 2.5rem;
-
-	/* @media (max-width: 767px) { */
-	/* width: 85%; */
-	/* } */
 `;
 
 const ImgBtnContainer = styled.div`
@@ -171,8 +167,8 @@ const BtnSvg = styled.span`
 		height: 1rem;
 	}
 	@media (max-width: 767px) {
-		width: 2rem;
-		height: 2rem;
+		width: 1.4rem;
+		height: 1.4rem;
 	}
 `;
 
@@ -186,12 +182,12 @@ const SvgBtnDecrement = styled.svg`
 	}
 
 	@media (max-width: 767px) {
-		width: 16px;
-		height: 4px;
+		width: 10px;
+		height: 2.5px;
 	}
 	@media (max-width: 480px) {
-		width: 12px;
-		height: 3px;
+		width: 8px;
+		height: 2px;
 	}
 `;
 
@@ -205,12 +201,12 @@ const SvgBtnIncrement = styled.svg`
 	}
 
 	@media (max-width: 767px) {
-		width: 1rem;
-		height: 1rem;
+		width: 0.7rem;
+		height: 0.7rem;
 	}
 	@media (max-width: 480px) {
-		width: 0.8rem;
-		height: 0.8rem;
+		width: 0.6rem;
+		height: 0.6rem;
 	}
 `;
 
@@ -250,12 +246,12 @@ function MenuItem({ image, name, category, price, id }) {
 			<ImgBtnContainer>
 				<picture>
 					<source media='(min-width: 1140px)' srcSet={image.desktop} />
-					<source media='(max-width: 767px)' srcSet={image.mobile} />
 					<source media='(min-width: 768px)' srcSet={image.tablet} />
+					<source media='(max-width: 767px)' srcSet={image.mobile} />
 					{buttonActive ? (
-						<ImageActive src={image.desktop} />
+						<ImageActive src={image.mobile} />
 					) : (
-						<Image src={image.desktop} />
+						<Image src={image.mobile} />
 					)}
 				</picture>
 				{buttonActive ? (

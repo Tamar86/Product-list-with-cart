@@ -7,12 +7,7 @@ const StyledAppLayout = styled.div`
 	display: flex;
 	flex-direction: column;
 	max-width: 100%;
-	width: 100%;
 	gap: 3rem;
-
-	/* @media (max-width: 767px) { */
-	/* width: 45rem; */
-	/* } */
 `;
 
 const Layout = styled.div`
