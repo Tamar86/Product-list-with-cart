@@ -417,7 +417,7 @@ Error generating stack: `+l.message+`
 	@media (max-width: 767px) {
 		font-size: 2rem;
 	}
-`,M1=z.img``,D1=z.p`
+`,M1=z.div``,D1=z.p`
 	font-size: 0.8rem;
 	font-weight: 600;
 	color: hsl(7, 20%, 60%);
