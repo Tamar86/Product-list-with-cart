@@ -11,8 +11,8 @@ const StyledModal = styled.div`
 	max-width: 100%;
 	width: 35.5rem;
 	padding-bottom: 3rem;
-	max-height: fit-content;
-	/* height: fit-content; */
+	max-height: 30rem;
+	overflow-y: auto;
 	@media (max-width: 850px) {
 		width: 30.5rem;
 	}

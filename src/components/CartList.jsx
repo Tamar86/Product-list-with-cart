@@ -4,7 +4,6 @@ import { useProducts } from '../context/ProductsContext';
 import Button from './Button';
 
 const StyledList = styled.ul`
-	max-width: 100%;
 	border-bottom: 0.5px solid hsl(14, 25%, 72%);
 	display: flex;
 	align-items: center;

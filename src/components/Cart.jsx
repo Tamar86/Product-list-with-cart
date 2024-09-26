@@ -5,14 +5,14 @@ import CartList from './CartList';
 import OrderConfirm from './OrderConfirm';
 
 const StyledCart = styled.div`
+	max-width: 100%;
 	display: grid;
-	gap: 1.2rem;
 	background-color: hsl(20, 50%, 98%);
 	border-radius: 0.8rem;
 	padding: 1.5rem;
 	gap: 3rem;
-	max-width: 100%;
-	height: fit-content;
+	max-height: 25rem; // Set an appropriate height
+	overflow-y: auto; // Scrollable when items exceed the max-height
 `;
 
 const Container = styled.div`
