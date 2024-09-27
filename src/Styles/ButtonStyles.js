@@ -10,8 +10,10 @@ const breakpoint = {
 };
 
 export const ButtonBase = styled.button`
-	width: 11.25rem;
-	height: 3rem;
+	max-width: 100%;
+	width: 100%;
+	/* width: 11.25rem; */
+	/* height: 3rem; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -38,7 +40,7 @@ export const btnPrimary = css`
 export const btnAction = css`
 	position: absolute;
 	bottom: -1rem;
-	gap: 2rem;
+	gap: 20%;
 	background-color: hsl(14, 86%, 42%);
 	color: hsl(20, 50%, 98%);
 	border: none;
@@ -46,47 +48,15 @@ export const btnAction = css`
 	&:focus {
 		outline: none;
 	}
-
-	@media (max-width: 1340px) {
-		gap: 1.5rem;
-	}
-
-	@media (max-width: ${breakpoint.mobile}) {
-		gap: 4.2rem;
-	}
-
-	@media (max-width: ${breakpoint.smallMobile}) {
-		gap: 3.2rem;
-	}
-
-	@media (max-width: 440px) {
-		gap: 2.2rem;
-	}
 `;
 
 export const btnConfirm = css`
 	background-color: hsl(14, 86%, 42%);
 	color: hsl(20, 50%, 98%);
+	border: none;
 
 	&:hover {
 		background-color: hsl(15, 64.6%, 28.8%);
-	}
-
-	border: none;
-
-	@media (max-width: ${breakpoint.tablet}) {
-		width: 30.5rem;
-	}
-	@media (max-width: ${breakpoint.mobile}) {
-		width: 25rem;
-		font-size: 1rem;
-	}
-
-	@media (max-width: ${breakpoint.smallMobile}) {
-		width: 20rem;
-	}
-	@media (max-width: 375px) {
-		width: 15rem;
 	}
 `;
 
@@ -172,7 +142,8 @@ export const medium = css`
 `;
 
 export const large = css`
-	width: 20rem;
+	max-width: 100%;
+	width: 100%;
 	padding: 1rem 3rem;
 `;
 

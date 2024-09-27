@@ -18,8 +18,9 @@ const ImgBtnContainer = styled.div`
 
 const Image = styled.img`
 	max-width: 100%;
-	width: 15.5rem;
+	width: 100%;
 	border-radius: 0.5rem;
+	width: 15.5rem;
 
 	@media (max-width: 767px) {
 		width: 30.5rem;
@@ -42,89 +43,19 @@ const ProductsContainer = styled.div`
 	gap: 2px;
 `;
 
-const ProductsName = styled.p`
-	font-size: 1rem;
-	font-weight: 600;
-
-	@media (max-width: 1300px) {
-		font-size: 0.8rem;
-	}
-
-	@media (max-width: 1180px) {
-		font-size: 0.7rem;
-	}
-	@media (max-width: 1055px) {
-		font-size: 0.65rem;
-	}
-
-	@media (max-width: 1024px) {
-		font-size: 1rem;
-	}
-
-	@media (max-width: 865px) {
-		font-size: 0.8rem;
-	}
-
-	@media (max-width: 767px) {
-		font-size: 2rem;
-	}
-
-	@media (max-width: 520px) {
-		font-size: 1.5rem;
-	}
-
-	@media (max-width: 440px) {
-		font-size: 1.3rem;
-	}
-
-	@media (max-width: 340px) {
-		font-size: 1.2rem;
-	}
+const ProductsName = styled.h1`
+	font-size: 100%;
 `;
 
-const ProductsCategory = styled.p`
-	font-size: 0.8rem;
-	font-weight: 600;
+const ProductsCategory = styled.h2`
+	font-size: 80%;
+
 	color: hsl(7, 20%, 60%);
-
-	@media (max-width: 1246px) {
-		font-size: 0.6rem;
-	}
-
-	@media (max-width: 1024px) {
-		font-size: 0.8rem;
-	}
-
-	@media (max-width: 835px) {
-		font-size: 0.6rem;
-	}
-
-	@media (max-width: 767px) {
-		font-size: 1.6rem;
-	}
-
-	@media (max-width: 440px) {
-		font-size: 1.2rem;
-	}
-	@media (max-width: 340px) {
-		font-size: 1rem;
-	}
 `;
 
-const ProductsPrice = styled.p`
-	font-size: 1rem;
+const ProductsPrice = styled.h3`
+	font-size: 100%;
 	color: hsl(14, 86%, 42%);
-	font-weight: 600;
-
-	@media (max-width: 767px) {
-		font-size: 2rem;
-	}
-	@media (max-width: 440px) {
-		font-size: 1.5rem;
-	}
-	@media (max-width: 340px) {
-		font-size: 1.2rem;
-	}
 `;
 
 const SvgCartIcon = styled.svg`
@@ -146,8 +77,11 @@ const BtnSvg = styled.span`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 1.4rem;
-	height: 1.4rem;
+
+	max-width: 1.8rem;
+	max-height: 1.8rem;
+	width: 1.2rem;
+	height: 1.2rem;
 	border: 1px solid hsl(20, 50%, 98%);
 	background-color: transparent;
 	border-radius: 50%;
@@ -162,52 +96,20 @@ const BtnSvg = styled.span`
 		border: 1px solid hsl(14, 65%, 9%);
 	}
 
-	@media (max-width: 1240px) {
-		width: 1rem;
-		height: 1rem;
-	}
 	@media (max-width: 767px) {
-		width: 1.4rem;
-		height: 1.4rem;
+		width: 100%;
+		height: 100%;
 	}
 `;
 
 const SvgBtnDecrement = styled.svg`
 	width: 10px;
 	height: 2.5px;
-
-	@media (max-width: 1024px) {
-		width: 8px;
-		height: 2px;
-	}
-
-	@media (max-width: 767px) {
-		width: 10px;
-		height: 2.5px;
-	}
-	@media (max-width: 480px) {
-		width: 8px;
-		height: 2px;
-	}
 `;
 
 const SvgBtnIncrement = styled.svg`
 	width: 0.7rem;
 	height: 0.7rem;
-
-	@media (max-width: 1024px) {
-		width: 0.6rem;
-		height: 0.6rem;
-	}
-
-	@media (max-width: 767px) {
-		width: 0.7rem;
-		height: 0.7rem;
-	}
-	@media (max-width: 480px) {
-		width: 0.6rem;
-		height: 0.6rem;
-	}
 `;
 
 function MenuItem({ image, name, category, price, id }) {

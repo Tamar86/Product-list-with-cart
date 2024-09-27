@@ -9,32 +9,19 @@ const StyledModal = styled.div`
 	border-radius: 0.8rem;
 	padding: 1.5rem;
 	max-width: 100%;
-	width: 35.5rem;
+	width: 45%;
 	padding-bottom: 3rem;
-	max-height: 30rem;
-	overflow-y: auto;
-	@media (max-width: 850px) {
-		width: 30.5rem;
+	height: fit-content;
+
+	/* max-height: 30rem; */
+	/* overflow-y: auto; */
+
+	@media (max-width: 1024px) {
+		width: 60%;
 	}
 
 	@media (max-width: 767px) {
-		width: 28.5rem;
-	}
-
-	@media (max-width: 670px) {
-		width: 26.5rem;
-	}
-
-	@media (max-width: 580px) {
-		width: 24.5rem;
-	}
-
-	@media (max-width: 480px) {
-		width: 22.5rem;
-	}
-
-	@media (max-width: 320px) {
-		width: 20.5rem;
+		width: 95%;
 	}
 `;
 const Overlay = styled.div`
@@ -54,7 +41,7 @@ const Overlay = styled.div`
 	/* backdrop-filter: blur(1px); */
 	z-index: 1000;
 	transition: all 0.5s;
-	overflow-y: scroll;
+	overflow-y: auto;
 `;
 
 const Header = styled.h1`
@@ -67,29 +54,10 @@ const Paragraph = styled.p`
 `;
 
 const List = styled.ul`
+	max-width: 100%;
+	width: 100%;
 	border-radius: 0.8rem;
 	background-color: hsl(13, 31%, 94%);
-
-	@media (max-width: 850px) {
-		width: 28.5rem;
-	}
-
-	@media (max-width: 767px) {
-		width: 25.5rem;
-	}
-	@media (max-width: 670px) {
-		width: 23.5rem;
-	}
-	@media (max-width: 580px) {
-		width: 20.5rem;
-	}
-
-	@media (max-width: 480px) {
-		width: 19.5rem;
-	}
-	@media (max-width: 320px) {
-		width: 16.5rem;
-	}
 `;
 
 const ListItem = styled.li`
@@ -138,26 +106,8 @@ const OrderTotalContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	@media (max-width: 850px) {
-		width: 28.5rem;
-	}
-
-	@media (max-width: 767px) {
-		width: 25.5rem;
-	}
-	@media (max-width: 670px) {
-		width: 23.5rem;
-	}
-	@media (max-width: 580px) {
-		width: 20.5rem;
-	}
-
-	@media (max-width: 480px) {
-		width: 19.5rem;
-	}
-	@media (max-width: 320px) {
-		width: 16.5rem;
-	}
+	max-width: 100%;
+	width: 100%;
 `;
 
 const OrderTotal = styled.span`
@@ -173,32 +123,10 @@ const OrderTotalAmount = styled.span`
 
 const ListImg = styled.img`
 	border-radius: 5px;
-`;
+	max-width: 100%;
 
-const ButtonContainer = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	@media (max-width: 850px) {
-		width: 28.5rem;
-	}
-
-	@media (max-width: 767px) {
-		width: 25.5rem;
-	}
-
-	@media (max-width: 670px) {
-		width: 23.5rem;
-	}
-	@media (max-width: 580px) {
-		width: 20.5rem;
-	}
-	@media (max-width: 480px) {
-		width: 18.5rem;
-	}
-	@media (max-width: 320px) {
-		width: 16.5rem;
+	@media (max-width: 600px) {
+		width: 20%;
 	}
 `;
 
@@ -262,11 +190,10 @@ function ConfirmModal({ orderTotal, cart }) {
 					<OrderTotal>Order Total</OrderTotal>
 					<OrderTotalAmount>${orderTotal.toFixed(2)}</OrderTotalAmount>
 				</OrderTotalContainer>
-				<ButtonContainer>
-					<Button size='xLarge' variant='btnConfirm' onClick={handleClick}>
-						Start New Order
-					</Button>
-				</ButtonContainer>
+
+				<Button size='large' variant='btnConfirm' onClick={handleClick}>
+					Start New Order
+				</Button>
 			</StyledModal>
 		</Overlay>
 	);

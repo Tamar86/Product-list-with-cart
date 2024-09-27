@@ -22,6 +22,7 @@ const Menu = styled.div`
 `;
 const Heading = styled.h1`
 	color: hsl(14, 65%, 9%);
+	font-size: 2.5rem;
 
 	@media (max-width: 767px) {
 		font-size: 4rem;

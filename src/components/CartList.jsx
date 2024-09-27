@@ -8,31 +8,8 @@ const StyledList = styled.ul`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
-	@media (max-width: 767px) {
-		width: 29rem;
-	}
-	@media (max-width: 608px) {
-		width: 27rem;
-	}
-	@media (max-width: 575px) {
-		width: 24rem;
-	}
-	@media (max-width: 524px) {
-		width: 23rem;
-	}
-	@media (max-width: 480px) {
-		width: 21rem;
-	}
-	@media (max-width: 427px) {
-		width: 19rem;
-	}
-	@media (max-width: 400px) {
-		width: 17rem;
-	}
-	@media (max-width: 357px) {
-		width: 15rem;
-	}
+	max-width: 100%;
+	width: 100%;
 `;
 
 const ListItem = styled.li`
@@ -40,8 +17,11 @@ const ListItem = styled.li`
 	gap: 0.5rem;
 	list-style: none;
 	font-weight: 600;
-
 	padding-bottom: 1rem;
+
+	@media (max-width: 767px) {
+		font-size: 50%;
+	}
 `;
 
 const ListContainer = styled.div`
@@ -53,7 +33,8 @@ const PriceContainer = styled.div`
 	gap: 0.4rem;
 `;
 
-const Name = styled.p`
+const Name = styled.h1`
+	font-size: 100%;
 	color: hsl(14, 65%, 9%);
 `;
 
@@ -110,6 +91,7 @@ function CartList({ name, price, numPerProduct, id }) {
 					</PriceContainer>
 				</ListContainer>
 			</ListItem>
+
 			<Button size='small' onClick={handleDeleteProduct}>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'

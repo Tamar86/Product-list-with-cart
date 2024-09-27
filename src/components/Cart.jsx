@@ -6,44 +6,14 @@ import OrderConfirm from './OrderConfirm';
 
 const StyledCart = styled.div`
 	max-width: 100%;
-
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	background-color: hsl(20, 50%, 98%);
 	border-radius: 0.8rem;
 	padding: 1.5rem;
 	gap: 3rem;
 	height: fit-content;
-
-	@media (max-width: 767px) {
-		width: 32rem;
-	}
-	@media (max-width: 608px) {
-		width: 30rem;
-	}
-	@media (max-width: 575px) {
-		width: 28rem;
-	}
-	@media (max-width: 524px) {
-		width: 27rem;
-	}
-	@media (max-width: 480px) {
-		width: 25rem;
-	}
-	@media (max-width: 427px) {
-		width: 23rem;
-	}
-	@media (max-width: 400px) {
-		width: 20rem;
-	}
-	@media (max-width: 357px) {
-		width: 18rem;
-	}
-
-	@media (max-width: 320px) {
-		width: 17rem;
-	}
 `;
 
 const Container = styled.div`
@@ -55,11 +25,8 @@ const Container = styled.div`
 
 const Heading = styled.h1`
 	color: hsl(14, 86%, 42%);
-	font-size: 1.5rem;
-
-	@media (max-width: 767px) {
-		font-size: 2rem;
-	}
+	font-size: 2rem;
+	font-weight: 700;
 `;
 
 const Image = styled.div``;
@@ -68,22 +35,6 @@ const Paragraph = styled.p`
 	font-size: 0.8rem;
 	font-weight: 600;
 	color: hsl(7, 20%, 60%);
-
-	@media (max-width: 767px) {
-		font-size: 1.4rem;
-	}
-	@media (max-width: 500px) {
-		font-size: 1.2rem;
-	}
-	@media (max-width: 440px) {
-		font-size: 1rem;
-	}
-	@media (max-width: 350px) {
-		font-size: 0.9rem;
-	}
-	@media (max-width: 340px) {
-		font-size: 0.8rem;
-	}
 `;
 
 function Cart() {
