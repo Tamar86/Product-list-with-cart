@@ -12,9 +12,7 @@ const StyledModal = styled.div`
 	width: 45%;
 	padding-bottom: 3rem;
 	height: fit-content;
-
-	/* max-height: 30rem; */
-	/* overflow-y: auto; */
+	font-size: 100%;
 
 	@media (max-width: 1024px) {
 		width: 60%;
@@ -22,6 +20,10 @@ const StyledModal = styled.div`
 
 	@media (max-width: 767px) {
 		width: 95%;
+		font-size: 50%;
+	}
+	@media (max-width: 480px) {
+		font-size: 35%;
 	}
 `;
 const Overlay = styled.div`
@@ -46,7 +48,6 @@ const Overlay = styled.div`
 
 const Header = styled.h1`
 	color: hsl(14, 65%, 9%);
-	font-size: 2.5rem;
 `;
 
 const Paragraph = styled.p`
@@ -58,6 +59,7 @@ const List = styled.ul`
 	width: 100%;
 	border-radius: 0.8rem;
 	background-color: hsl(13, 31%, 94%);
+	font-size: 100%;
 `;
 
 const ListItem = styled.li`
@@ -66,10 +68,6 @@ const ListItem = styled.li`
 	align-items: center;
 	justify-content: space-between;
 	padding: 1rem;
-
-	@media (max-width: 600px) {
-		font-size: smaller;
-	}
 `;
 
 const ProductContainer = styled.div`
@@ -102,7 +100,14 @@ const ProductTotalPrice = styled.span`
 	font-weight: 700;
 `;
 
-const OrderTotalContainer = styled.div`
+const OrderContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+`;
+
+const Order = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -186,14 +191,16 @@ function ConfirmModal({ orderTotal, cart }) {
 					))}
 				</List>
 
-				<OrderTotalContainer>
-					<OrderTotal>Order Total</OrderTotal>
-					<OrderTotalAmount>${orderTotal.toFixed(2)}</OrderTotalAmount>
-				</OrderTotalContainer>
+				<OrderContainer>
+					<Order>
+						<OrderTotal>Order Total</OrderTotal>
+						<OrderTotalAmount>${orderTotal.toFixed(2)}</OrderTotalAmount>
+					</Order>
 
-				<Button size='large' variant='btnConfirm' onClick={handleClick}>
-					Start New Order
-				</Button>
+					<Button size='large' variant='btnNewOrder' onClick={handleClick}>
+						Start New Order
+					</Button>
+				</OrderContainer>
 			</StyledModal>
 		</Overlay>
 	);

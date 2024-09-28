@@ -12,13 +12,11 @@ const breakpoint = {
 export const ButtonBase = styled.button`
 	max-width: 100%;
 	width: 100%;
-	/* width: 11.25rem; */
-	/* height: 3rem; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 2rem;
-	font-size: 1rem;
+	font-size: 100%;
 
 	&:hover {
 		cursor: pointer;
@@ -55,6 +53,22 @@ export const btnConfirm = css`
 	color: hsl(20, 50%, 98%);
 	border: none;
 
+	&:hover {
+		background-color: hsl(15, 64.6%, 28.8%);
+	}
+
+	@media (max-width: 767px) {
+		font-size: 80%;
+	}
+	@media (max-width: 480px) {
+		font-size: 60%;
+	}
+`;
+
+export const btnNewOrder = css`
+	background-color: hsl(14, 86%, 42%);
+	color: hsl(20, 50%, 98%);
+	border: none;
 	&:hover {
 		background-color: hsl(15, 64.6%, 28.8%);
 	}

@@ -4,6 +4,7 @@ import {
 	btnPrimary,
 	btnAction,
 	btnConfirm,
+	btnNewOrder,
 	small,
 	medium,
 	large,
@@ -15,6 +16,7 @@ const StyledButton = styled(ButtonBase)`
 		if (variant === 'btnAction') return btnAction;
 		if (variant === 'btnPrimary') return btnPrimary;
 		if (variant === 'btnConfirm') return btnConfirm;
+		if (variant === 'btnNewOrder') return btnNewOrder;
 	}}
 
 	${({ size = medium }) => {
